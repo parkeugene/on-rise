@@ -1,4 +1,6 @@
 # README
+=======
+[![Stories in Ready](https://badge.waffle.io/parkeugene/on-rise.png?label=ready&title=Ready)](https://waffle.io/parkeugene/on-rise)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

@@ -12,9 +12,9 @@
 
 - Rails 5
 - Repository : https://github.com/parkeugene/on-rise
-- 티켓관리 : waffle
-- CI : travis
-- 배포 : heroku
+- 티켓관리 waffle : https://waffle.io/parkeugene/on-rise
+- CI travis : https://travis-ci.org
+- 배포 heroku : https://on-rise.herokuapp.com
 
 ### 프로젝트 참여
 

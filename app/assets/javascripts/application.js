@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// usage masonry
+//= require masonry/jquery.masonry
+// masonry: contents generation helper
+//= require masonry/box-maker
+//= require masonry/jquery.loremimages.min

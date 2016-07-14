@@ -1,7 +1,19 @@
+<div class="center jumbotron">
+  <h1>Welcome to the ###</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Translation Code</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
 <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
 
   <div class="box col4">
-    <%= @project.title %>
+    <%= @project %>
   </div>
 
   <div class="box col4">

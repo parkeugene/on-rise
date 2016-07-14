@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+    Project.create([{title: 'Rails Tutorial', original_url: 'https://www.railstutorial.org', translation_url: 'http://tutorial.rorlab.org'}])

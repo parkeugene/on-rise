@@ -1,18 +1,110 @@
-<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+<!-- Banner -->
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row">
+							<div class="7u 12u(medium)">
+								<h2>번역 프로젝트</h2>
+								<p>관심있는 프로젝트를 응원해 주세요</p>
+							</div>
+							<div class="5u 12u(medium)">
+								<ul>
+									<li><a href="#" class="button big icon fa-arrow-circle-right">프로젝트 찾기</a></li>
+									<li><a href="#" class="button alt big icon fa-question-circle">프로젝트 등록</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-  <div class="box col4">
-    <% if @project %>
-      <%= @project.title %>
-    <% end %>
-  </div>
+			<!-- Features -->
+				<div id="features-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(medium)">
 
-  <div class="box col4">
-    <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-  </div>
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><%= image_tag("pic011.jpg", alt: "logo") %></a>
+										<div class="inner">
+											<header>
+												<h2>Rails Tutorial 한글화</h2>
+												<p>RORLAB</p>
+											</header>
+											<p>목표는 독자들이 한글로 된 문서를 활용하여 인기 있는 웹 프레임워크인 루비온레일스를 이용하여 웹 애플리케이션을 개발할 수 있게 하는 것이다.</p>
+										</div>
+									</section>
 
-  <div class="box col4">
-    <p>
-      <a href="http://www.flickr.com/photos/nemoorange/3319714470/" title="Whitlow's on Wilson by nemoorange, on Flickr"><img src="http://farm4.static.flickr.com/3008/3319714470_c05a5cb5a8_m.jpg" alt="Whitlow's on Wilson" /></a>
-    </p>
-  </div>
-</div>
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><%= image_tag("pic022.jpg", alt: "logo") %></a>
+										<div class="inner">
+											<header>
+												<h2>Rust 문서 한글화 프로젝트</h2>
+												<p>sarojaba · Rust Doc Korean</p>
+											</header>
+											<p>세가지 목표(안정성, 속도, 병행성)에 초점을 둔 Rust 프로그래밍 언어에 대한 한글화 진행</p>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="#" class="image featured"><%= image_tag("pic033.jpg", alt: "logo") %></a>
+										<div class="inner">
+											<header>
+												<h2>Swift translation for KOREAN</h2>
+												<p>http://swift.leantra.kr/</p>
+											</header>
+											<p>성숙하고 많은 사랑을 받고 있는 코코아, 코코아 터치 프레임워크를 기반으로 둔 Swift의 훌륭함을 한글 문서로 전달하는 프로젝트</p>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u(medium)">
+
+								<!-- Sidebar -->
+									<div id="sidebar">
+										<section class="widget thumbnails">
+											<h3>인기있는 프로젝트</h3>
+											<div class="grid">
+												<div class="row 50%">
+													<div class="6u"><a href="#" class="image fit"><%= image_tag("pic044.jpg", alt: "logo") %></a></div>
+													<div class="6u"><a href="#" class="image fit"><%= image_tag("pic055.jpg", alt: "logo") %></div>
+													<div class="6u"><a href="#" class="image fit"><%= image_tag("pic066.jpg", alt: "logo") %></a></div>
+													<div class="6u"><a href="#" class="image fit"><%= image_tag("pic077.jpg", alt: "logo") %></a></div>
+												</div>
+											</div>
+											<a href="#" class="button icon fa-file-text-o">More</a>
+										</section>
+									</div>
+
+							</div>
+							<div class="8u 12u(medium) important(medium)">
+
+								<!-- Content -->
+									<div id="content">
+										<section class="last">
+											<h2>프로젝트를 등록하는데 제한이 있나요?</h2>
+											<p>프로그래밍과 관련된 외국어자료를 번역하는 곳이면 언어 상관없이 괜찮습니다.</p>
+											<p>본 웹서비스는 프로그래밍 언어의 한글화를 위해 각지에서 열심히 활동중이신 분들을 널리 알리고 정보를 공유하기 위한 서비스입니다. 프로젝트정보 등록에는 제한이 없으나, 해당 번역자/번역팀의 요청에 따라 게시된 프로젝트가 일정기간 블라인드 처리 될 수도 있습니다.</p>
+											<a href="#" class="button icon fa-arrow-circle-right">자세히 알아보기</a>
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</div>

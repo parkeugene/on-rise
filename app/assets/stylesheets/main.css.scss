@@ -1761,7 +1761,7 @@
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
 				}
-				
+
 
 /* Icons */
 
@@ -1861,6 +1861,18 @@
 
 	#header {
 		position: relative;
+	}
+
+/* Log in */
+	#login {
+		float:right;
+		padding-right: 2.5em;
+	}
+
+	#login ul li {
+		float: left;
+		line-height: 4.5em;
+		padding-left: 1.5em;
 	}
 
 /* Logo */

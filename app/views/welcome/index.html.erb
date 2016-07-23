@@ -1,7 +1,9 @@
 <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
 
   <div class="box col4">
-    <%= @project.title %>
+    <% if @project %>
+      <%= @project.title %>
+    <% end %>
   </div>
 
   <div class="box col4">

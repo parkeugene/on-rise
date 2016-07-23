@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710051945) do
+ActiveRecord::Schema.define(version: 20160722095236) do
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "img"
+    t.string   "title"
+    t.text     "description"
+    t.string   "original_link"
+    t.string   "trans_link"
+    t.string   "translators"
+    t.string   "goal"
+    t.string   "area"
+    t.string   "participation_way"
+    t.integer  "likes_number"
+    t.string   "start_date"
+    t.string   "end_date"
+    t.string   "status"
+    t.integer  "read_count"
+    t.string   "contact"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"

@@ -1,0 +1,92 @@
+<%= form_for(post) do |f| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :img %>
+    <%= f.text_field :img %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :original_link %>
+    <%= f.text_field :original_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :trans_link %>
+    <%= f.text_field :trans_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :translators %>
+    <%= f.text_field :translators %>
+  </div>
+
+  <div class="field">
+    <%= f.label :goal %>
+    <%= f.text_field :goal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :area %>
+    <%= f.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= f.label :participation_way %>
+    <%= f.text_field :participation_way %>
+  </div>
+
+  <div class="field">
+    <%= f.label :likes_number %>
+    <%= f.number_field :likes_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_date %>
+    <%= f.text_field :start_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end_date %>
+    <%= f.text_field :end_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :read_count %>
+    <%= f.number_field :read_count %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact %>
+    <%= f.text_field :contact %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

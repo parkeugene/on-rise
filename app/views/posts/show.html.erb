@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @post.img %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Original link:</strong>
+  <%= @post.original_link %>
+</p>
+
+<p>
+  <strong>Trans link:</strong>
+  <%= @post.trans_link %>
+</p>
+
+<p>
+  <strong>Translators:</strong>
+  <%= @post.translators %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @post.goal %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @post.area %>
+</p>
+
+<p>
+  <strong>Participation way:</strong>
+  <%= @post.participation_way %>
+</p>
+
+<p>
+  <strong>Likes number:</strong>
+  <%= @post.likes_number %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @post.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @post.end_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @post.status %>
+</p>
+
+<p>
+  <strong>Read count:</strong>
+  <%= @post.read_count %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @post.contact %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

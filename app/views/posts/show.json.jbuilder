@@ -1,0 +1,1 @@
+json.extract! @post, :id, :img, :title, :description, :original_link, :trans_link, :translators, :goal, :area, :participation_way, :likes_number, :start_date, :end_date, :status, :read_count, :contact, :created_at, :updated_at

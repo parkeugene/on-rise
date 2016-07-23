@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Img</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Original link</th>
+      <th>Trans link</th>
+      <th>Translators</th>
+      <th>Goal</th>
+      <th>Area</th>
+      <th>Participation way</th>
+      <th>Likes number</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Status</th>
+      <th>Read count</th>
+      <th>Contact</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.img %></td>
+        <td><%= post.title %></td>
+        <td><%= post.description %></td>
+        <td><%= post.original_link %></td>
+        <td><%= post.trans_link %></td>
+        <td><%= post.translators %></td>
+        <td><%= post.goal %></td>
+        <td><%= post.area %></td>
+        <td><%= post.participation_way %></td>
+        <td><%= post.likes_number %></td>
+        <td><%= post.start_date %></td>
+        <td><%= post.end_date %></td>
+        <td><%= post.status %></td>
+        <td><%= post.read_count %></td>
+        <td><%= post.contact %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-    @project = Project.first
+    if Project.all.size > 0
+      @project = Project.first
+    end
   end
 end

@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'omniauth-facebook'
 
 gem 'masonry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160722095236) do
+ActiveRecord::Schema.define(version: 20160729120258) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "img"
@@ -33,11 +33,20 @@ ActiveRecord::Schema.define(version: 20160722095236) do
   end
 
   create_table "projects", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "project_id"
     t.string   "title"
-    t.string   "original_url"
-    t.string   "translation_url"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "team"
+    t.string   "language"
+    t.string   "link"
+    t.date     "date"
+    t.string   "image"
+    t.string   "progress"
+    t.boolean  "applicant"
+    t.string   "content"
+    t.string   "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

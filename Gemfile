@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'font-awesome-sass'
-
+gem 'devise'
 gem 'bootstrap-sass'
 
 gem 'masonry-rails'

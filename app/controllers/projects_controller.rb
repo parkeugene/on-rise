@@ -4,10 +4,10 @@ class ProjectsController < ApplicationController
     @lists = Project.all
   end
 
-  def create
+  def new
   end
 
-  def create_complete
+  def create
     post = Project.new
     post.user_id = session[:user_id]
     post.user_id = params[:project_id]
@@ -19,10 +19,10 @@ class ProjectsController < ApplicationController
     post.image = params[:proejct_image]
     post.progress = params[:progress]
     post.applicant = params[:applicant]
-    post.content = params[content]
+    post.content = params[:project_content]
     if post.save
       flash[:alert] = "저장되었습니다."
-      redirect_to "/"
+      redirect_to "/projects"
     else
       flash[:alert] = post.errors.values.flatten.join(' ')
       redirect_to :back

@@ -21,3 +21,37 @@
  *= require 'masonry/transitions'
  */
 
+/*====== body ======*/
+body{
+  background-image: none;
+}
+/*===== header =====*/
+/*ㄴ최상단*/
+.topOfTop.navbar-fixed-top{
+  position: fixed;
+  top:0;
+  height: 40px;
+}
+.topLogin{
+  display: inline;
+}
+.topLogin>ul{
+  margin: 15px 20px 0;
+}
+.topLogin>ul>li{
+  float: right;
+  margin-left: 20px
+}
+.navbar-fixed-top{
+  top:50px;
+}
+/*ㄴ두번째 상단*/
+.navbar-inverse{
+  background: #efefef;
+  border-bottom: none;
+}
+
+/*====== row ======*/
+.page-header{
+  border-bottom: none;
+}

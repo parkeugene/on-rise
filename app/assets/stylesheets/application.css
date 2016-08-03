@@ -33,7 +33,7 @@ body{
 .topOfTop.navbar-fixed-top{
   position: fixed;
   top:0;
-  height: 60px;
+  height: 50px;
   background: #fff;
 }
 .topLogin{
@@ -49,6 +49,14 @@ body{
 .navbar-fixed-top{
   top:50px;
 }
+/*ㄴ마우스스크롤*/
+.nav-up {
+    top: -50px;
+}
+.nav-down{
+    top: 0;
+}
+
 /*ㄴ두번째 상단*/
 .navbar-inverse{
   background: #efefef;

@@ -102,6 +102,18 @@
                 </li>
               </ul>
             </li>
+            <% if user_signed_in? %>
+              <li>
+                <%= link_to 'Sign out', destroy_user_session_path, method: 'delete' %>
+              </li>
+            <% else %>
+              <li>
+                <a href="/users/sign_in">Sign in</a>
+              </li>
+              <li>
+                <a href="/users/sign_up">Sign up</a>
+              </li>
+            <% end %>
           </ul>
         </div>
         <!-- /.navbar-collapse -->

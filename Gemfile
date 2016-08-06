@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'masonry-rails'

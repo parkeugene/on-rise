@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+gem 'omniauth-facebook'
 
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'

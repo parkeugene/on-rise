@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160722095236) do
+ActiveRecord::Schema.define(version: 20160807021925) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "img"
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(version: 20160722095236) do
     t.string   "translation_url"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.text     "description"
+    t.string   "subtitle"
+    t.string   "contributor"
+    t.string   "contributor_url"
   end
 
 end

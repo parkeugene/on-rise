@@ -13,11 +13,11 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
+        format.html { redirect_to @project, notice: 'Post was successfully created.' }
+        format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
 	private
     # Use callbacks to share common setup or constraints between actions.
     def set_project
-      @post = Project.find(params[:id])
+      @project = Project.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

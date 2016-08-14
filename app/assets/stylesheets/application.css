@@ -20,4 +20,100 @@
  *= require 'masonry/right-to-left'
  *= require 'masonry/transitions'
  */
+/*=======기본 ======*/
+.notUnderline a{
+  text-decoration: none !important;
+}
+/*====== body ======*/
+body{
+  background-image: none;
+}
+/*===== header =====*/
+/*ㄴ최상단*/
+.topOfTop.navbar-fixed-top{
+  position: fixed;
+  top:0;
+  height: 50px;
+  background: #fff;
+}
+.topLogin{
+  display: inline;
+}
+.topLogin>ul{
+  margin: 15px 20px 0;
+}
+.topLogin>ul>li{
+  float: right;
+  margin-left: 20px
+}
+.navbar-fixed-top{
+  top:50px;
+}
+/*ㄴ마우스스크롤*/
+.nav-up {
+    top: -50px;
+}
+.nav-down{
+    top: 0;
+}
 
+/*ㄴ두번째 상단*/
+.navbar-inverse{
+  background: #efefef;
+  border-bottom: none;
+}
+
+
+/*====== 본문 ======*/
+/*ㄴrow*/
+.page-header{
+  border-bottom: none;
+}
+/*ㄴ카드*/
+.panel-default{
+  border-color: #efefef;
+}
+.panel-default:hover{
+  border-color: #e0e0e0;
+}
+.panel-default > .panel-heading{
+  background-color: #fff;
+  border-bottom: none;
+}
+.panel-heading>h4{
+  padding: 30px 0 30px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.panel-body{
+  padding: 15px 30px 15px;
+}
+.panel-body p{
+  margin: 0 0 1.1em;
+}
+.panel-author{
+  padding: 15px 30px 15px;
+}
+.panel-author-avatar{
+  display: inline-block;
+  width: 40px;
+  height:40px;
+  border-radius: 20px;
+  background: red;
+}
+.panel-author-name{
+  float: right;
+  margin-top: 10px;
+}
+.panel-author-name a{
+  font-size: 1.2em;
+  color: #0090c5;
+}
+.panel-author-name a:hover{
+  background: none;
+}
+.panel-author-name::after{
+  clear: both;
+}

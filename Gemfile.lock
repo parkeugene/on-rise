@@ -217,11 +217,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
   devise!
-=======
-  devise
->>>>>>> user-model-#16
   figaro
   font-awesome-sass
   jbuilder (~> 2.5)

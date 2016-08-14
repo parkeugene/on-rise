@@ -2,10 +2,24 @@
 
 one:
   title: MyString
-  original_url: MyString
-  translation_url: MyString
+  team: MyString
+  language: MyString
+  link: MyString
+  date: 2016-07-29
+  image: MyString
+  progress: MyString
+  applicant: false
+  content: MyString
+  comment: MyString
 
 two:
   title: MyString
-  original_url: MyString
-  translation_url: MyString
+  team: MyString
+  language: MyString
+  link: MyString
+  date: 2016-07-29
+  image: MyString
+  progress: MyString
+  applicant: false
+  content: MyString
+  comment: MyString

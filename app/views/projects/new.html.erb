@@ -1,0 +1,12 @@
+<h3>프로젝트 추가하기</h3>
+
+  <form action="/projects" method="post">
+    <p>제목<input type="text" name="project_title" placeholder="프로젝트 제목"></p>
+    <p>팀<input type="text" name="team_name" placeholder="팀 이름"></p>
+    <p>언어<input type="text" name="language" placeholder="ex)Ruby on Rails, Go, Rust"></p>
+    <p>Link<input type="text" name="project_link" placeholder="프로젝트 링크"></p>
+    <p>시작일<input type="date" name="project_start" placeholder="프로젝트 시작일"></p>
+    <p>진행상황<input type="text" name="progress" placeholder="ex)멤버 모집중, 검수단계"></p>
+    <p><textarea name="project_content" placeholder="내용을 입력하세요."></textarea></p>
+    <input type="submit" value="작성완료">
+  </form>

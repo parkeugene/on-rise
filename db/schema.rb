@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160729120258) do
-=======
 ActiveRecord::Schema.define(version: 20160806162408) do
->>>>>>> feature-UserModel-#24
 
   create_table "posts", force: :cascade do |t|
     t.string   "img"

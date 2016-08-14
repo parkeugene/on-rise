@@ -7,8 +7,8 @@ env:
   - DB=postgresql
 install: bundle install
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
-  - bundle exec rake
+  - bin/rails db:migrate RAILS_ENV=test --trace
+  - bin/rails rake db:test:prepare
+  - bin/rails rake
 before_script:
   - psql -c 'create database demoapp_test' -U postgres

@@ -1,11 +1,15 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+
+  config.omniauth :facebook, ENV["FB_APP_ID"], ENV["FB_APP_SECRET"]
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+
   # config.secret_key = '3e28545a3145f616755e5da51fb6f58831bf6a367bb8566f9d2e852f3d9b4861bfa3949b9eedb2f346368557384a913c1b924aaec2222f21ff62921e8962b27d'
 
   # ==> Mailer Configuration
@@ -108,6 +112,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
+
   # config.pepper = '74898dccac5804f22cb2d40a42dcdd2c724e56aac52872c83b23d4d317b05bbe7751c333f7c954ae65b6581649fa3b9ccaeea0b29a5bed6c5b4bbc4936e6664d'
 
   # Send a notification email when the user's password is changed
@@ -271,6 +276,7 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+
 	config.omniauth :facebook, "", ""
 
 end

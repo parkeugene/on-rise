@@ -8,5 +8,6 @@ env:
 install: bundle install
 script:
   - bin/rails db:migrate RAILS_ENV=test --trace
+
 before_script:
   - psql -c 'create database demoapp_test' -U postgres

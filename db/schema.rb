@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160820052118) do
+=======
 ActiveRecord::Schema.define(version: 20160806162408) do
+>>>>>>> master
 
   create_table "posts", force: :cascade do |t|
     t.string   "img"
@@ -36,6 +40,16 @@ ActiveRecord::Schema.define(version: 20160806162408) do
     t.integer  "user_id"
     t.integer  "project_id"
     t.string   "title"
+<<<<<<< HEAD
+    t.string   "subtitle"
+    t.string   "original_url"
+    t.string   "translation_url"
+    t.text     "description"
+    t.string   "contributor"
+    t.string   "contributor_url"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+=======
     t.string   "team"
     t.string   "language"
     t.string   "link"
@@ -68,6 +82,7 @@ ActiveRecord::Schema.define(version: 20160806162408) do
     t.string   "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+>>>>>>> master
   end
 
 end

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @project.subtitle %>
+</p>
+
+<p>
+  <strong>Original url:</strong>
+  <%= @project.original_url %>
+</p>
+
+<p>
+  <strong>Translation url:</strong>
+  <%= @project.translation_url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Contributor:</strong>
+  <%= @project.contributor %>
+</p>
+
+<p>
+  <strong>Contributor url:</strong>
+  <%= @project.contributor_url %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

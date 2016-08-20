@@ -4,8 +4,15 @@
   <!-- Log in-->
   <div id="login">
       <ul>
-        <li>Log in</li>
-        <li>Sign up</li>
+      <% if user_signed_in? %>
+        <%= image_tag(current_user.image, size: '20x20', style:'border-radius:3px;vertical-align:top;') if current_user.image %>
+        <%= current_user.email %>
+        <%= link_to '로그아웃', destroy_user_session_path, method: :delete, data: {confirm: '로그아웃 하시겠습니까?'} %>
+      <% else %>
+        <%= link_to '페이스북 로그인', user_facebook_omniauth_authorize_path %>
+        <%= link_to '로그인', new_user_session_path %>
+        <%= link_to '회원가입', new_user_registration_path %>
+      <% end %>
       </ul>
   </div>
   <div id="header-wrapper">
@@ -15,7 +22,7 @@
 
       <!-- Logo -->
         <div id="logo">
-          <h1><a href="index.html">TranCo</a></h1>
+          <h1><a href="/">TranCo</a></h1>
           <span>by Rorlab</span>
         </div>
 
@@ -42,9 +49,9 @@
               </ul>
             </li>
           -->
-            <li><a href="left-sidebar.html">About</a></li>
-            <li><a href="right-sidebar.html">Projects</a></li>
-            <li><a href="no-sidebar.html">Q & A</a></li>
+            <li><a href="#">About</a></li>
+            <li><%= link_to "Projects", projects_path %></li>
+            <li><a href="#">Q & A</a></li>
           </ul>
         </nav>
 

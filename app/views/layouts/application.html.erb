@@ -27,7 +27,7 @@
     <div class="topOfTop navbar-fixed-top nav-down">
       <div class="container">
         <div class="topLogo">
-          <a class="navbar-brand" href="index.html">On-Rise</a>
+          <a class="navbar-brand" href="/">On-Rise</a>
         </div>
         <div class="topLogin">
           <ul>
@@ -53,13 +53,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="about.html">프로젝트</a>
+              <a href="/">프로젝트</a>
             </li>
             <li>
-              <a href="services.html">만들기</a>
+              <%= link_to '만들기', new_project_path %>
             </li>
             <li>
-              <a href="contact.html">요청하기</a>
+              <%= link_to '요청하기', new_project_path %>
             </li>
             <% if user_signed_in? %>
               <li>

@@ -2,10 +2,18 @@
 
 one:
   title: MyString
+  subtitle: MyString
   original_url: MyString
   translation_url: MyString
+  description: MyText
+  contributor: MyString
+  contributor_url: MyString
 
 two:
   title: MyString
+  subtitle: MyString
   original_url: MyString
   translation_url: MyString
+  description: MyText
+  contributor: MyString
+  contributor_url: MyString
